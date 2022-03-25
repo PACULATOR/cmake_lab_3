@@ -6,15 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib/formatter_ex.cpp
-formatter_ex.h
-/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib/formatter_ex.h
-formatter.h
-/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib/formatter.h
-
-/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib/formatter_ex.h
-string
--
-iostream
--
-

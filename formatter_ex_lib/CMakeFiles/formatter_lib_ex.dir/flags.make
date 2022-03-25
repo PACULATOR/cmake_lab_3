@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I"/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib/../formatter_lib" -I"/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib/4len" 
 

@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib/CMakeFiles" "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib/CMakeFiles/progress.marks"
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib/CMakeFiles" "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib/xyi/CMakeFiles/progress.marks"
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(MAKE) -f CMakeFiles/Makefile2 xyi/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(MAKE) -f CMakeFiles/Makefile2 xyi/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,71 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(MAKE) -f CMakeFiles/Makefile2 xyi/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(MAKE) -f CMakeFiles/Makefile2 xyi/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named formatter_lib_ex
+# Convenience name for target.
+xyi/CMakeFiles/formatter_lib.dir/rule:
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(MAKE) -f CMakeFiles/Makefile2 xyi/CMakeFiles/formatter_lib.dir/rule
+.PHONY : xyi/CMakeFiles/formatter_lib.dir/rule
 
-# Build rule for target.
-formatter_lib_ex: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 formatter_lib_ex
-.PHONY : formatter_lib_ex
+# Convenience name for target.
+formatter_lib: xyi/CMakeFiles/formatter_lib.dir/rule
 
-# fast build rule for target.
-formatter_lib_ex/fast:
-	$(MAKE) -f CMakeFiles/formatter_lib_ex.dir/build.make CMakeFiles/formatter_lib_ex.dir/build
-.PHONY : formatter_lib_ex/fast
-
-#=============================================================================
-# Target rules for targets named formatter_lib
-
-# Build rule for target.
-formatter_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 formatter_lib
 .PHONY : formatter_lib
 
 # fast build rule for target.
 formatter_lib/fast:
-	$(MAKE) -f xyi/CMakeFiles/formatter_lib.dir/build.make xyi/CMakeFiles/formatter_lib.dir/build
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(MAKE) -f xyi/CMakeFiles/formatter_lib.dir/build.make xyi/CMakeFiles/formatter_lib.dir/build
 .PHONY : formatter_lib/fast
 
-formatter_ex.o: formatter_ex.cpp.o
+formatter.o: formatter.cpp.o
 
-.PHONY : formatter_ex.o
+.PHONY : formatter.o
 
 # target to build an object file
-formatter_ex.cpp.o:
-	$(MAKE) -f CMakeFiles/formatter_lib_ex.dir/build.make CMakeFiles/formatter_lib_ex.dir/formatter_ex.cpp.o
-.PHONY : formatter_ex.cpp.o
+formatter.cpp.o:
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(MAKE) -f xyi/CMakeFiles/formatter_lib.dir/build.make xyi/CMakeFiles/formatter_lib.dir/formatter.cpp.o
+.PHONY : formatter.cpp.o
 
-formatter_ex.i: formatter_ex.cpp.i
+formatter.i: formatter.cpp.i
 
-.PHONY : formatter_ex.i
+.PHONY : formatter.i
 
 # target to preprocess a source file
-formatter_ex.cpp.i:
-	$(MAKE) -f CMakeFiles/formatter_lib_ex.dir/build.make CMakeFiles/formatter_lib_ex.dir/formatter_ex.cpp.i
-.PHONY : formatter_ex.cpp.i
+formatter.cpp.i:
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(MAKE) -f xyi/CMakeFiles/formatter_lib.dir/build.make xyi/CMakeFiles/formatter_lib.dir/formatter.cpp.i
+.PHONY : formatter.cpp.i
 
-formatter_ex.s: formatter_ex.cpp.s
+formatter.s: formatter.cpp.s
 
-.PHONY : formatter_ex.s
+.PHONY : formatter.s
 
 # target to generate assembly for a file
-formatter_ex.cpp.s:
-	$(MAKE) -f CMakeFiles/formatter_lib_ex.dir/build.make CMakeFiles/formatter_lib_ex.dir/formatter_ex.cpp.s
-.PHONY : formatter_ex.cpp.s
+formatter.cpp.s:
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(MAKE) -f xyi/CMakeFiles/formatter_lib.dir/build.make xyi/CMakeFiles/formatter_lib.dir/formatter.cpp.s
+.PHONY : formatter.cpp.s
 
 # Help Target
 help:
@@ -170,12 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... formatter_lib_ex"
-	@echo "... edit_cache"
 	@echo "... formatter_lib"
-	@echo "... formatter_ex.o"
-	@echo "... formatter_ex.i"
-	@echo "... formatter_ex.s"
+	@echo "... edit_cache"
+	@echo "... formatter.o"
+	@echo "... formatter.i"
+	@echo "... formatter.s"
 .PHONY : help
 
 
@@ -187,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/ram/pca02/Рабочий стол/lab_3_temp/cmake_lab_3/formatter_ex_lib" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
