@@ -4,7 +4,8 @@ set(CMAKE_CXX_STANDARD  14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 file(GLOB
         CPP "*.cpp")
-add_executable(${PROJECT_NAME} ${CPP})
-add_library(lib_formatter_ex STATIC ${CMAKE_CURRENT_DIR} ${CPP})
-add_subdirectory(${CMAKE_CURRENT_DIR}/../formatter_lib formatter_lib) 
-target_link_libraries(${PROJECT_NAME} PUBLIC formatter_lib)
+
+add_library(formatter_lib_ex STATIC ${CMAKE_CURRENT_DIR} ${CPP})
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_DIR}/../formatter_lib)
+add_subdirectory(${CMAKE_CURRENT_DIR}/../formatter_lib) 
+target_link_libraries(formatter_lib_ex PUBLIC formatter_lib)
