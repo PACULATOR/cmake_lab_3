@@ -6,5 +6,6 @@ file(GLOB
 add_executable(${PROJECT_NAME} ${CPP})
 add_library(lib_formatter STATIC ${CMAKE_CURRENT_DIR} ${CPP})
 target_include_directories(lib_formatter PUBLIC ${PROJECT_SOURCE_DIR})
+target_include_directories(lib_formatter PUBLIC ${PROJECT_BINARY_DIR})
 target_link_libraries(${PROJECT_NAME} lib_fromatter)
 
