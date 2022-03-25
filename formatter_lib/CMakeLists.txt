@@ -5,6 +5,6 @@ set(CMAKE_CXX_STANDARD  14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 file(GLOB
         CPP "*.cpp")
-add_executable(${PROJECT_NAME} ${CPP})
+add_library(${PROJECT_NAME} STATIC ${CPP})
 
 

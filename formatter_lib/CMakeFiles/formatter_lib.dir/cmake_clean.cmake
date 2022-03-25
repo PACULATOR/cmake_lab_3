@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/formatter_lib.dir/formatter.cpp.o"
-  "formatter_lib.pdb"
-  "formatter_lib"
+  "libformatter_lib.pdb"
+  "libformatter_lib.a"
 )
 
 # Per-language clean rules from dependency scanning.
