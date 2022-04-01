@@ -6,6 +6,6 @@ file(GLOB
         CPP "*.cpp")
 
 add_library(formatter_lib_ex STATIC ${CMAKE_CURRENT_DIR} ${CPP})
-target_include_directories(${PROJECT_NAME} PUBLIC ../formatter_lib da)
-add_subdirectory(../formatter_lib net) 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}../formatter_lib)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}../formatter_lib formatter_lib) 
 target_link_libraries(formatter_lib_ex PUBLIC formatter_lib)
